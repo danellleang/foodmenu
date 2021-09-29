@@ -7,7 +7,7 @@ if 'hasFood' not in st.session_state:
 
 
 st.header("Welcome to Danell's Food Menu Demo")
-
+readme = st.checkbox("readme firs
 if readme:
 
     st.write("""
