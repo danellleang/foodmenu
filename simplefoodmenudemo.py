@@ -6,18 +6,18 @@ if 'hasFood' not in st.session_state:
     st.session_state.hasFood = 0
 
 
-st.header("Welcome to ABC Simple Food Menu Demo")
+st.header("Welcome to Danell's court Food Menu Demo")
 
 st.write("Choose an option from the radio button on the side bar to continue.")
 
 
 option = st.sidebar.selectbox(
     'Select an option',
-     ['Add a food','Find a food','Get the sorted food list','Reset entire food menu system'])
+     ['Add a food','Find a food','Get the sorted food list','Reset entire food menu system', 'Contact us'])
 
 if option == 'Add a food':
     foodName = st.text_input("Please enter the food name")
-    foodPrice = st.text_input("Please enter the food price")
+    foodPrice = st.text_input("Please enter the food price in RM")
     submit = st.button('submit')
 
     if submit:
@@ -35,7 +35,7 @@ if option == 'Add a food':
                 st.session_state.hasFood = 1
 
         else:
-            st.write("Please fill in the details first. ")
+            st.write("Please fill in the details first! ")
 
 
 elif option == 'Find a food':
@@ -61,6 +61,12 @@ elif option == 'Get the sorted food list':
 
     else:
         st.write("Empty Food Menu.")
+        
+        
+ elif option == 'Contact us':
+
+    
+        st.write("Please email your query to tech_support@dc.com or call us via +603-23008888")         
 
 else:
     st.write("The food menu system has been reset.")
