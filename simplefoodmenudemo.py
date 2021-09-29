@@ -59,17 +59,17 @@ elif option == 'Get the sorted food list':
         st.write("The list in the Food Menu:")
         st.write(pd.DataFrame(st.session_state.RBAFoodMenu.inOrderTraversal(),columns=["Food Name", "Price"]))
 
-    else:
+
         st.write("Empty Food Menu.")
-        
-        
- elif option == 'Contact us':
 
-    
-        st.write("Please email your query to tech_support@dc.com or call us via +603-23008888")         
-
-else:
+        
+ elif option == 'Reset entire food menu system':
     st.write("The food menu system has been reset.")
 
     st.session_state.hasFood = 0 
     st.session_state.RBAFoodMenu = []
+
+        
+  else:
+         st.write("Please email your query to tech_support@dc.com or call us via +603-23008888")         
+
