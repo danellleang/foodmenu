@@ -13,7 +13,7 @@ st.write("Choose an option from the radio button on the side bar to continue.")
 
 option = st.sidebar.selectbox(
     'Select an option',
-     ['Add a food','Find a food','Get the sorted food list','Reset entire food menu system', 'Contact us'])
+     ['Add a food','Find a food','Get the sorted food list','Reset entire food menu system','Contact us'])
 
 if option == 'Add a food':
     foodName = st.text_input("Please enter the food name")
