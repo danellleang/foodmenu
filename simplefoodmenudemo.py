@@ -1,7 +1,9 @@
 import streamlit as st
 from binarysearchtree import foodMenu
 import pandas as pd
-
+from PIL import Image
+image = Image.open('https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80')
+st.image(image, caption='Danell Kitchen')
 if 'hasFood' not in st.session_state:
     st.session_state.hasFood = 0
 
