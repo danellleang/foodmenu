@@ -6,7 +6,7 @@ if 'hasFood' not in st.session_state:
     st.session_state.hasFood = 0
 
 
-st.header("Welcome to ABC Simple Food Menu Demo")
+st.header("Welcome to Danell's Food Menu Demo")
 
 st.write("Choose an option from the radio button on the side bar to continue.")
 
@@ -17,7 +17,7 @@ option = st.sidebar.selectbox(
 
 if option == 'Add a food':
     foodName = st.text_input("Please enter the food name")
-    foodPrice = st.text_input("Please enter the food price")
+    foodPrice = st.text_input("Please enter the food price in RM")
     submit = st.button('submit')
 
     if submit:
